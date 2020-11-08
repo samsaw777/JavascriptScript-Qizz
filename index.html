@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lossers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+    <div class="mainframe">
+        <div class="container">
+            <div class="heading">
+                <p class="firstpara">JST TRY IT OR LEAVE IT!</p></div>
+            <div id="qizz" class="firstdiv"></div>
+            <div class="btnclass">
+            <button class="secondelement" id="submit">Submit</button>
+            <button class="btn2" onclick="openForm()">Proceed>></button>
+        </div>
+        
+            <div class="thirddiv" id="answers"></div>
+        </div>
+    </div>
+    <div class="formclass" id="myform">
+        <form class="form-container">
+            <h1>Login</h1>
+            <label for="name"><b>Name:</b> </label>
+            <input type="text" id="name" placeholder="eg. John Snow" name="name">
+            <label for="email"><b>Enter Email:</b></label>
+            <input type="Email" id="email" placeholder="eg. mail@gmail.com" name="email"> 
+            <label for="pwd"><b>Enter Password:</b></label>
+            <input type="password" id="password" name="pwd">
+            <button type="submit" class="sub-btn"> Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <script src="js/action.js"></script>
+    <script>
+        function closeForm() {
+      document.getElementById("myform").style="display: none";
+    }
+    function openForm() {
+      document.getElementById("myform").style="display: block";
+    }
+    </script>
+</body>
+</html> 
